@@ -3,14 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Documentos</title>
+    <title>Documentacion Disponible</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3498db; /* Fondo azul llamativo */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #content {
+            text-align: center;
+            background-color: #fff; /* Fondo blanco */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #title-image {
+            width: 100%; /* Ajusta el ancho según sea necesario */
+            height: 100px; /* Ajusta la altura según sea necesario */
+            background-image: url('https://drive.google.com/file/d/1TiofPo4UY8T1pInGT4smgYvQ6InkZ1AZ/view?usp=sharing'); /* Reemplaza con la URL de la imagen en Google Drive */
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+            display: inline-block;
+            background-color: #fff; /* Fondo blanco */
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #007BFF; /* Fondo azul al pasar el ratón */
+            color: #fff; /* Texto blanco al pasar el ratón */
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Mis Documentos</h1>
-    <p>Enlaces a mis documentos:</p>
-    <ul>
-        <li><a href="https://github.com/tanaxaa/1-pdf/blob/main/FASTLAB-ANEXO%20INFORME%20SVD%20EAA%20005%20AA0908M012.pdf">Documento 1</a></li>
-        <li><a href="https://github.com/tanaxaa/1-pdf/blob/main/FASTLAB-INFORME%20DE%20SERVICIO%20MANTENIMIENTO%20PREVENTIVO%20EAA005%20AA0908M012.pdf"</a></li>
-    </ul>
+    <div id="content">
+        <div id="title-image"></div>
+        <h1>Mis Documentos</h1>
+        <p>Enlaces a mis documentos:</p>
+        <ul>
+            <li><a href="https://drive.google.com/file/d/1oe9dsIC-Crwoin-QbP-RjX8lE1-qaf_c/view?usp=sharing">Documento 1</a></li>
+            <li><a href="https://drive.google.com/file/d/1K-lTpFl2OX-G0uX3bKCrhtL9MRMw8152/view?usp=sharing">Documento 2</a></li>
+        </ul>
+    </div>
 </body>
 </html>
