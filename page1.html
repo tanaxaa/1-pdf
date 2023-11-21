@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .image-container {
+            margin-right: 20px;
+        }
+
+        img {
+            max-width: 160px; /* Ajusta el tamaño de la imagen */
+            height: auto;
+        }
+
+        .menu-container {
+            text-align: center;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        select {
+            font-size: 16px;
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            box-sizing: border-box;
+            appearance: none;
+            background: #fff url('https://drive.google.com/uc?id=1TiofPo4UY8T1pInGT4smgYvQ6InkZ1AZ') no-repeat right center;
+            background-size: 50px; /* Reducción del tamaño de la imagen */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        select:hover, select:focus {
+            border-color: #666;
+        }
+    </style>
+    <title>Menú Desplegable</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="https://drive.google.com/uc?id=1TiofPo4UY8T1pInGT4smgYvQ6InkZ1AZ" alt="Imagen">
+        </div>
+        <div class="menu-container">
+            <label for="pdf-dropdown">Documentacion disponible:</label>
+            <select id="pdf-dropdown" onchange="openPdf(this.value)">
+                <option value="#" selected disabled>2 Documentos disponibles </option>
+                <option value="https://drive.google.com/file/d/1oe9dsIC-Crwoin-QbP-RjX8lE1-qaf_c/view?usp=sharing">SVD Resuls Report</option>
+                <option value="https://drive.google.com/file/d/1K-lTpFl2OX-G0uX3bKCrhtL9MRMw8152/view?usp=sharing">Informe de Servicio Mantenimiento Preventivo</option>
+                <!-- Añadir más opciones según sea necesario -->
+            </select>
+        </div>
+    </div>
+
+    <script>
+        function openPdf(url) {
+            if (url !== "#") {
+                window.open(url, '_blank');
+            }
+        }
+    </script>
+
+</body>
+</html>
